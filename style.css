@@ -192,9 +192,9 @@ button { cursor: pointer; border: none; font-family: var(--font-body); }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(4px);
+  filter: blur(5px);
   z-index: -1; /* Se mantiene detrás del contenido, pero ahora es visible */
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .hero-bg-grid {
