@@ -178,23 +178,23 @@ button { cursor: pointer; border: none; font-family: var(--font-body); }
   position: relative;
   padding-top: 100px;
   overflow: hidden;
-  background-color: var(--bg-deep);
+  /* Se elimina el background-color para que no tape el ::before */
 }
 
 /* Fondo con imagen portada corregido - ESPACIOS CODIFICADOS */
 .hero::before {
   content: '';
   position: absolute;
-  inset: -20px;
+  inset: -20px; 
   background-image: 
-    linear-gradient(rgba(5, 5, 5, 0.4), rgba(5, 5, 5, 0.4)),
+    linear-gradient(rgba(5, 5, 5, 0.3), rgba(5, 5, 5, 0.3)), 
     url('imagen portada.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   filter: blur(4px);
-  z-index: -1;
-  opacity: 0.9;
+  z-index: -1; /* Se mantiene detrás del contenido, pero ahora es visible */
+  opacity: 1;
 }
 
 .hero-bg-grid {
