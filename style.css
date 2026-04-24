@@ -194,7 +194,7 @@ button { cursor: pointer; border: none; font-family: var(--font-body); }
   background-repeat: no-repeat;
   filter: blur(5px);
   z-index: -1; /* Se mantiene detrás del contenido, pero ahora es visible */
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 .hero-bg-grid {
